@@ -1,0 +1,42 @@
+.treeView .childContainer {
+  margin-left: 11px;
+  padding-left: 25px;
+  border-left: 1px dashed darkgray;
+}
+
+.treeView .childContainer.hidden {
+  display: none;
+}
+
+.treeView .parentWrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.treeView .parentWrapper.expanded::before {
+  content: "";
+  background-image: url("../images/down-arrow.png");
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  display:inline-block;
+}
+
+.treeView .parentWrapper::before {
+  content: "";
+  background-image: url("../images/right-arrow.png");
+  vertical-align: middle;
+  display:inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 500px) {
+  .treeView .parentWrapper.expanded::before {
+    vertical-align: super;
+  }
+
+  .treeView .parentWrapper::before {
+    vertical-align: super;
+  }
+}

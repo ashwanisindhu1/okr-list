@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+}
+.App h3 {
+  text-align: center;
+  margin: 15px 0 0;
+}
+.App .filters {
+  margin: 10px 0 10px 0;
+}
+
+.App .filters select {
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 100%;
+  }
+}

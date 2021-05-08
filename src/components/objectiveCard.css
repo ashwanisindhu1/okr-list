@@ -1,0 +1,32 @@
+.objectiveCard {
+  margin-bottom: 1px;
+  user-select: none;
+}
+
+.objectiveCard .title {
+  display: inline-block;
+  padding: 10px;
+}
+
+.objectiveCard .title p {
+  margin: 0;
+}
+
+.objectiveCard .title p::before {
+  margin-right: 3px;
+}
+
+.objectiveCard.parentCard {
+  display: inline-block;
+}
+
+.objectiveCard .toggleExpand {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+  .objectiveCard.parentCard {
+   max-width: calc(100% - 30px);
+  }
+}
