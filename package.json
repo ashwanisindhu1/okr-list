@@ -1,10 +1,10 @@
 {
-  "name": "react",
+  "name": "okr-list-application",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "OKR List application",
   "keywords": [
     "react",
-    "starter"
+    "treeview"
   ],
   "main": "src/index.js",
   "dependencies": {
